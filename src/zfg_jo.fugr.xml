@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function group for jo test</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFG_JOTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFG_JO</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFM_JO_GET_MANAGER</FUNCNAME>
+     <SHORT_TEXT>find manager</SHORT_TEXT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ACTOR_TAB</PARAMETER>
+       <DBSTRUCT>SWHACTOR</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>AC_CONTAINER</PARAMETER>
+       <DBSTRUCT>SWCONT</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>NOBODY_FOUND</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>ACTOR_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Rule Resolution Result</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>AC_CONTAINER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Instance Structure</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NOBODY_FOUND</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>NOBODY_FOUND</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
